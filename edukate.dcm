@@ -70,6 +70,18 @@ K linear regulator ldo fixed positive obsolete
 F http://www.diodes.com/datasheets/AP1117.pdf
 $ENDCMP
 #
+$CMP Battery
+D Multiple-cell battery
+K batt voltage-source cell
+F ~
+$ENDCMP
+#
+$CMP Buzzer
+D Buzzer, polarized
+K quartz resonator ceramic
+F ~
+$ENDCMP
+#
 $CMP CP_Small
 D Polarized capacitor, small symbol
 K cap capacitor
