@@ -88,6 +88,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP Conn_JLINK
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Conn_Keypad
 D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
