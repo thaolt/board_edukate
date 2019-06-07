@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name edukate)(type Legacy)(uri ${KIPRJMOD}/edukate.lib)(options "")(descr ""))
+)
