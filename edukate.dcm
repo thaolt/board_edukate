@@ -232,6 +232,10 @@ K switch normally-open pushbutton push-button
 F ~
 $ENDCMP
 #
+$CMP TP4056
+F "./datasheet/TP4056 Datasheet.pdf"
+$ENDCMP
+#
 $CMP USB_OTG
 D USB mini/micro connector
 K connector USB
