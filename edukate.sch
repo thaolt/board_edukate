@@ -1061,7 +1061,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1200 5300 1200
 NoConn ~ 9300 6150
-Text Notes 7750 6350 2    100  ~ 20
+Text Notes 7800 6350 2    100  ~ 20
 Buzzer
 $Comp
 L edukate:R_Small R3
@@ -1332,13 +1332,13 @@ $EndComp
 $Comp
 L edukate:Buzzer BZ1
 U 1 1 5D91881F
-P 7450 5800
-F 0 "BZ1" H 7750 5850 50  0000 R CNN
-F 1 "Buzzer" H 7850 5750 50  0000 R CNN
-F 2 "" V 7425 5900 50  0001 C CNN
-F 3 "~" V 7425 5900 50  0001 C CNN
-	1    7450 5800
-	1    0    0    -1  
+P 7200 5300
+F 0 "BZ1" H 7500 5350 50  0000 R CNN
+F 1 "Buzzer" H 7600 5250 50  0000 R CNN
+F 2 "" V 7175 5400 50  0001 C CNN
+F 3 "~" V 7175 5400 50  0001 C CNN
+	1    7200 5300
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0102
@@ -1400,4 +1400,73 @@ F 3 "" H 14350 1050 50  0001 C CNN
 	1    14350 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5D15B846
+P 8100 5200
+F 0 "#PWR01" H 8100 5050 50  0001 C CNN
+F 1 "VCC" H 8117 5373 50  0000 C CNN
+F 2 "" H 8100 5200 50  0001 C CNN
+F 3 "" H 8100 5200 50  0001 C CNN
+	1    8100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5200 7300 5200
+$Comp
+L edukate:R_Small R12
+U 1 1 5D16AA3C
+P 7750 5200
+F 0 "R12" V 7554 5200 50  0000 C CNN
+F 1 "10K" V 7645 5200 50  0000 C CNN
+F 2 "" H 7750 5200 50  0001 C CNN
+F 3 "~" H 7750 5200 50  0001 C CNN
+	1    7750 5200
+	0    1    1    0   
+$EndComp
+Text Label 8600 5600 2    50   ~ 0
+BUZZ_PIN
+$Comp
+L edukate:MMBT3904 Q1
+U 1 1 5D1D24A0
+P 7750 5600
+F 0 "Q1" H 7941 5646 50  0000 L CNN
+F 1 "MMBT3904" H 7941 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7950 5525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7750 5600 50  0001 L CNN
+	1    7750 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5400 7300 5400
+$Comp
+L edukate:GND #PWR08
+U 1 1 5D208815
+P 7650 5850
+F 0 "#PWR08" H 7650 5600 50  0001 C CNN
+F 1 "GND" H 7655 5677 50  0000 C CNN
+F 2 "" H 7650 5850 50  0001 C CNN
+F 3 "~" H 7650 5850 50  0001 C CNN
+	1    7650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5800 7650 5850
+$Comp
+L edukate:R_Small R13
+U 1 1 5D2179BE
+P 8100 5600
+F 0 "R13" V 7904 5600 50  0000 C CNN
+F 1 "1K" V 7995 5600 50  0000 C CNN
+F 2 "" H 8100 5600 50  0001 C CNN
+F 3 "~" H 8100 5600 50  0001 C CNN
+	1    8100 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 5600 8200 5600
+Wire Wire Line
+	8000 5600 7950 5600
+Wire Wire Line
+	8100 5200 7850 5200
 $EndSCHEMATC
