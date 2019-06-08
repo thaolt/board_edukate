@@ -109,7 +109,7 @@ $ENDCMP
 $CMP Buzzer
 D Buzzer, polarized
 K quartz resonator ceramic
-F ~
+F https://www.adafruit.com/product/1536
 $ENDCMP
 #
 $CMP CP_Small
@@ -277,6 +277,12 @@ $ENDCMP
 $CMP SW_Push
 D Push button switch, generic, two pins
 K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+$CMP Small_LED
+D Light emitting diode, small symbol, filled shape
+K LED diode light-emitting-diode
 F ~
 $ENDCMP
 #
