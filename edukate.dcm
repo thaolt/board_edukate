@@ -10,99 +10,21 @@ D Power symbol creates a global label with name "+5V"
 K power-flag
 $ENDCMP
 #
-$CMP AMS1117-1.5
-D 1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
-$CMP AMS1117-1.8
-D 1A Low Dropout regulator, positive, 1.8V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
-$CMP AMS1117-2.5
-D 1A Low Dropout regulator, positive, 2.5V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
-$CMP AMS1117-2.85
-D 1A Low Dropout regulator, positive, 2.85V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
 $CMP AMS1117-3.3
 D 1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
-$CMP AMS1117-5.0
-D 1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223
-K linear regulator ldo fixed positive
-F http://www.advanced-monolithic.com/pdf/ds1117.pdf
-$ENDCMP
-#
-$CMP AP1117-18
-D 1A Low Dropout regulator, positive, 1.8V fixed output, SOT-223
 K linear regulator ldo fixed positive obsolete
-F http://www.diodes.com/datasheets/AP1117.pdf
-$ENDCMP
-#
-$CMP AP1117-25
-D 1A Low Dropout regulator, positive, 2.5V fixed output, SOT-223
-K linear regulator ldo fixed positive obsolete
-F http://www.diodes.com/datasheets/AP1117.pdf
-$ENDCMP
-#
-$CMP AP1117-33
-D 1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223
-K linear regulator ldo fixed positive obsolete
-F http://www.diodes.com/datasheets/AP1117.pdf
-$ENDCMP
-#
-$CMP AP1117-50
-D 1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223
-K linear regulator ldo fixed positive obsolete
-F http://www.diodes.com/datasheets/AP1117.pdf
-$ENDCMP
-#
-$CMP BC818
-D 0.8A Ic, 25V Vce, NPN Transistor, SOT-23
-K NPN Transistor
-F https://www.fairchildsemi.com/datasheets/BC/BC818.pdf
-$ENDCMP
-#
-$CMP BC847
-D 0.1A Ic, 45V Vce, NPN Transistor, SOT-23
-K NPN Small Signal Transistor
-F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
-$ENDCMP
-#
-$CMP BC848
-D 0.1A Ic, 30V Vce, NPN Transistor, SOT-23
-K NPN Small Signal Transistor
-F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
-$ENDCMP
-#
-$CMP BC849
-D 0.1A Ic, 30V Vce, NPN Transistor, SOT-23
-K NPN Small Signal Transistor
-F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
-$ENDCMP
-#
-$CMP BC850
-D 0.1A Ic, 45V Vce, NPN Transistor, SOT-23
-K NPN Small Signal Transistor
-F http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657
+F http://www.diodes.com/datasheets/ds1117.pdf
 $ENDCMP
 #
 $CMP Battery
 D Multiple-cell battery
 K batt voltage-source cell
+F ~
+$ENDCMP
+#
+$CMP Battery_Cell
+D Single-cell battery
+K battery cell
 F ~
 $ENDCMP
 #
@@ -160,100 +82,22 @@ K power-flag ground gnd
 F ~
 $ENDCMP
 #
-$CMP LD1117S12TR_SOT223
-D 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 1.2V, SOT-223
-K REGULATOR LDO 1.2V
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf
-$ENDCMP
-#
-$CMP LD1117S18TR_SOT223
-D 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 1.8V, SOT-223
-K REGULATOR LDO 1.8V
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf
-$ENDCMP
-#
-$CMP LD1117S25TR_SOT223
-D 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 2.5V, SOT-223
-K REGULATOR LDO 2.5V
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf
-$ENDCMP
-#
-$CMP LD1117S33TR_SOT223
-D 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223
-K REGULATOR LDO 3.3V
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf
-$ENDCMP
-#
-$CMP LD1117S50TR_SOT223
-D 800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 5.0V, SOT-223
-K REGULATOR LDO 5.0V
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf
-$ENDCMP
-#
 $CMP MMBT3904
-D 0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23
+D https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf
 K NPN Transistor
 F https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf
 $ENDCMP
 #
-$CMP MMBT5550L
-D 0.6A Ic, 140V Vce, NPN Transistor, SOT-23
-K NPN Transistor
-F www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF
+$CMP RTRIM
+D Trimmable resistor (preset resistor)
+K R res resistor variable potentiometer trimmer
+F ~
 $ENDCMP
 #
-$CMP MMBT5551L
-D 0.6A Ic, 160V Vce, NPN Transistor, SOT-23
-K NPN Transistor
-F www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-1.5_SOT223
-D 1A Low drop-out regulator, Fixed Output 1.5V, SOT-223
-K REGULATOR LDO 1.5V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-1.8_SOT223
-D 1A Low drop-out regulator, Fixed Output 1.8V, SOT-223
-K REGULATOR LDO 1.8V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-12_SOT223
-D 1A Low drop-out regulator, Fixed Output 12V, SOT-223
-K REGULATOR LDO 12V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-2.0_SOT223
-D 1A Low drop-out regulator, Fixed Output 2V, SOT-223
-K REGULATOR LDO 2V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-2.5_SOT223
-D 1A Low drop-out regulator, Fixed Output 2.5V, SOT-223
-K REGULATOR LDO 2.5V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-2.85_SOT223
-D 1A Low drop-out regulator, Fixed Output 2.85V, SOT-223
-K REGULATOR LDO 2.85V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-3.3_SOT223
-D 1A Low drop-out regulator, Fixed Output 3.3V, SOT-223
-K REGULATOR LDO 3.3V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
-$ENDCMP
-#
-$CMP NCP1117-5.0_SOT223
-D 1A Low drop-out regulator, Fixed Output 5V, SOT-223
-K REGULATOR LDO 5V
-F http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF
+$CMP R_POT
+D Potentiometer
+K resistor variable
+F ~
 $ENDCMP
 #
 $CMP R_Small
@@ -262,13 +106,7 @@ K R resistor
 F ~
 $ENDCMP
 #
-$CMP STM32F103VDTx
-D ARM Cortex-M3 MCU, 384KB flash, 64KB RAM, 72MHz, 2-3.6V, 82 GPIO, LQFP-100
-K ARM Cortex-M3 STM32F1 STM32F103
-F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00191185.pdf
-$ENDCMP
-#
-$CMP STM32F103VETx
+$CMP STM32F103VET6
 D ARM Cortex-M3 MCU, 512KB flash, 64KB RAM, 72MHz, 2-3.6V, 82 GPIO, LQFP-100
 K ARM Cortex-M3 STM32F1 STM32F103
 F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00191185.pdf
@@ -277,6 +115,12 @@ $ENDCMP
 $CMP SW_Push
 D Push button switch, generic, two pins
 K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+$CMP SW_SPST
+D Single Pole Single Throw (SPST) switch
+K switch lever
 F ~
 $ENDCMP
 #
