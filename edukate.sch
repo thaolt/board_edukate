@@ -5,7 +5,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "CHIP8 Emulation - Education Kit (EduC8; EduKate)"
 Date ""
 Rev ""
 Comp ""
@@ -16,7 +16,7 @@ Comment4 ""
 $EndDescr
 Text Notes 10350 6500 2    100  ~ 20
 USB
-Text Notes 8500 3100 2    100  ~ 20
+Text Notes 9600 3100 2    100  ~ 20
 LCD
 $Comp
 L edukate:USB_OTG J5
@@ -1854,14 +1854,8 @@ Text Label 8350 2900 2    50   ~ 0
 LCD_BLK
 Wire Wire Line
 	8350 2600 7800 2600
-Wire Wire Line
-	8350 2800 7800 2800
-Wire Wire Line
-	7800 2900 8350 2900
 Text Label 8350 2500 2    50   ~ 0
 LCD_NC
-Wire Wire Line
-	8350 1500 7800 1500
 Wire Wire Line
 	7800 1400 8350 1400
 Wire Wire Line
@@ -1871,12 +1865,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR028
 U 1 1 5D580E8B
-P 8650 2400
-F 0 "#PWR028" H 8650 2250 50  0001 C CNN
-F 1 "VCC" H 8667 2573 50  0000 C CNN
-F 2 "" H 8650 2400 50  0001 C CNN
-F 3 "" H 8650 2400 50  0001 C CNN
-	1    8650 2400
+P 9100 2400
+F 0 "#PWR028" H 9100 2250 50  0001 C CNN
+F 1 "VCC" H 9100 2300 50  0000 C BNN
+F 2 "" H 9100 2400 50  0001 C CNN
+F 3 "" H 9100 2400 50  0001 C CNN
+	1    9100 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2022,4 +2016,142 @@ Wire Wire Line
 	6100 1150 6100 1350
 Wire Wire Line
 	6400 1150 6400 1300
+Text Label 3000 7200 0    50   ~ 0
+LCD_RS
+Wire Wire Line
+	3000 7200 3500 7200
+Text Label 2750 6400 0    50   ~ 0
+LCD_RW
+Text Label 3000 6300 0    50   ~ 0
+FSMC_NOE
+Wire Wire Line
+	3000 6300 3500 6300
+Text Label 3100 6400 0    50   ~ 0
+FSMC_NWE
+Wire Wire Line
+	2750 6400 3500 6400
+Text Label 3000 6600 0    50   ~ 0
+FSMC_NE1
+Wire Wire Line
+	3500 6600 3000 6600
+$Comp
+L edukate:MMBT3904 Q?
+U 1 1 5DF38C18
+P 8800 1750
+F 0 "Q?" H 8950 1850 50  0000 L CNN
+F 1 "MMBT3904" V 9050 1350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9000 1675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8800 1750 50  0001 L CNN
+	1    8800 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1500 8400 1500
+Text Label 9150 2050 2    50   ~ 0
+FSMC_NE1
+Wire Wire Line
+	9150 2050 9150 1950
+Wire Wire Line
+	9150 1750 9000 1750
+Wire Wire Line
+	8700 1950 8700 2050
+$Comp
+L edukate:GND #PWR?
+U 1 1 5DF8EFCD
+P 8700 2050
+F 0 "#PWR?" H 8700 1800 50  0001 C CNN
+F 1 "GND" H 8700 1900 50  0000 C CNN
+F 2 "" H 8700 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L edukate:R_Small R?
+U 1 1 5E00F731
+P 9150 1850
+F 0 "R?" H 9100 1900 50  0000 R CNN
+F 1 "1K" H 9100 1800 50  0000 R CNN
+F 2 "" H 9150 1850 50  0001 C CNN
+F 3 "~" H 9150 1850 50  0001 C CNN
+	1    9150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E010554
+P 8950 1500
+F 0 "#PWR?" H 8950 1350 50  0001 C CNN
+F 1 "VCC" H 8950 1400 50  0000 C BNN
+F 2 "" H 8950 1500 50  0001 C CNN
+F 3 "" H 8950 1500 50  0001 C CNN
+	1    8950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L edukate:R_Small R?
+U 1 1 5E065AEF
+P 8500 1500
+F 0 "R?" V 8450 1400 50  0000 L BNN
+F 1 "1K" V 8450 1650 50  0000 R BNN
+F 2 "" H 8500 1500 50  0001 C CNN
+F 3 "~" H 8500 1500 50  0001 C CNN
+	1    8500 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 1500 8700 1500
+Wire Wire Line
+	8700 1500 8700 1550
+Connection ~ 8700 1500
+Wire Wire Line
+	8700 1500 8950 1500
+$Comp
+L edukate:R_Small R?
+U 1 1 5E160AF8
+P 8750 2400
+F 0 "R?" V 8700 2300 50  0000 L BNN
+F 1 "1K" V 8700 2550 50  0000 R BNN
+F 2 "" H 8750 2400 50  0001 C CNN
+F 3 "~" H 8750 2400 50  0001 C CNN
+	1    8750 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 2400 9100 2400
+$Comp
+L edukate:GND #PWR?
+U 1 1 5E182095
+P 8650 3000
+F 0 "#PWR?" H 8650 2750 50  0001 C CNN
+F 1 "GND" H 8650 2850 50  0000 C CNN
+F 2 "" H 8650 3000 50  0001 C CNN
+F 3 "~" H 8650 3000 50  0001 C CNN
+	1    8650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2900 8350 2900
+Wire Wire Line
+	8350 2900 8350 3000
+Wire Wire Line
+	8350 3000 8650 3000
+Wire Wire Line
+	8450 2800 8450 2900
+Wire Wire Line
+	8450 2900 8650 2900
+Wire Wire Line
+	7800 2800 8450 2800
+$Comp
+L power:VCC #PWR?
+U 1 1 5E2583BC
+P 8650 2900
+F 0 "#PWR?" H 8650 2750 50  0001 C CNN
+F 1 "VCC" H 8800 2900 50  0000 C BNN
+F 2 "" H 8650 2900 50  0001 C CNN
+F 3 "" H 8650 2900 50  0001 C CNN
+	1    8650 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 2600
 $EndSCHEMATC
