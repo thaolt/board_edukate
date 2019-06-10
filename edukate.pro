@@ -1,4 +1,4 @@
-update=Thứ hai, 10 Tháng 6 Năm 2019 05:46:03 +07
+update=Mon 10 Jun 2019 11:55:36 AM +07
 version=1
 last_client=kicad
 [general]

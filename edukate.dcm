@@ -100,6 +100,12 @@ K resistor variable
 F ~
 $ENDCMP
 #
+$CMP R_Pack04
+D 4 resistor network, parallel topology, DIP package
+K R network parallel topology isolated
+F ~
+$ENDCMP
+#
 $CMP R_Small
 D Resistor, small symbol
 K R resistor
